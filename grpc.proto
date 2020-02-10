@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service GRPCService
+{
+
+rpc GetServerTime(Null) returns (Timestamp) {}
+
+}
+
+message Null {}
+
+message Timestamp
+{
+    double timestamp = 1;
+}
